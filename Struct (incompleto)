@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+struct vetor{
+	float x;
+	float y;
+};
+
+struct vetor subtrair_vetores(struct vetor a, struct vetor b){
+	struct vetor resultado;
+	resultado.x = a.x - b.x;
+	resultado.y = a.y - b.y;
+	
+	return resultado;
+}
+
+float tamanho_vetor(struct vetor a){
+	pow(a.x,2) + POW(a.y, )
+}
+
+int main() {
+	struct vetor A;
+	A.x = 2;
+	A.y = 3;
+	
+	struct vetor B;
+	B.x = 3;
+	B.y = 2;
+	
+	struct vetor D;
+	D = subtrair vetores(B, A);
+	
+	
+	return 0;
+}
