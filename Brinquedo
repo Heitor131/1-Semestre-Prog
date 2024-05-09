@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+struct Brinquedo {
+	char nome[10];
+	char marca[10];
+	float preco;
+};
+
+int main() {
+	struct Brinquedo carrinho;
+	strcpy(carrinho.nome,"Relampago Marquinhos");
+	strcpy(carrinho.marca, "ColfWheels");
+	carrinho.preco = 59.90;
+	
+	printf("Nome: %s\n", carrinho.nome);
+	printf("Marca: %s\n",carrinho.marca);
+	printf("Preco: %.2f\n", carrinho.preco);
+	
+	return 0;
+}
